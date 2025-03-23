@@ -1,3 +1,126 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Estilos globais */
+* {
+  font-family: 'Roboto', sans-serif; /* Definindo a fonte global */
+}
+
+body {
+  background-color: #E9EEF4;
+}
+
+:root {
+  --color-grass: #77c850;
+  --color-fire: #ee7f30;
+  --color-water: #678fee;
+  --color-electric: #f7cf2e;
+  --color-ice: #98d5d7;
+  --color-ground: #dfbf69;
+  --color-flying: #a98ff0;
+  --color-poison: #a040a0;
+  --color-fighting: #bf3029;
+  --color-psychic: #f65687;
+  --color-dark: #725847;
+  --color-rock: #b8a137;
+  --color-bug: #a8b720;
+  --color-ghost: #6e5896;
+  --color-steel: #b9b7cf;
+  --color-dragon: #6f38f6;
+  --color-fairy: #f9aec7;
+  --color-normal: #a8a878;
+}
+
+/* Classes para background de cada tipo */
+.bg-type-normal {
+  background-color: var(--color-normal);
+  color: black;
+}
+
+.bg-type-grass {
+  background-color: var(--color-grass);
+  color: black;
+}
+
+.bg-type-fire {
+  background-color: var(--color-fire);
+  color: white;
+}
+
+.bg-type-water {
+  background-color: var(--color-water);
+  color: white;
+}
+
+.bg-type-electric {
+  background-color: var(--color-electric);
+  color: black;
+}
+
+.bg-type-ice {
+  background-color: var(--color-ice);
+  color: black;
+}
+
+.bg-type-ground {
+  background-color: var(--color-ground);
+  color: black;
+}
+
+.bg-type-flying {
+  background-color: var(--color-flying);
+  color: black;
+}
+
+.bg-type-poison {
+  background-color: var(--color-poison);
+  color: white;
+}
+
+.bg-type-fighting {
+  background-color: var(--color-fighting);
+  color: white;
+}
+
+.bg-type-psychic {
+  background-color: var(--color-psychic);
+  color: white;
+}
+
+.bg-type-dark {
+  background-color: var(--color-dark);
+  color: white;
+}
+
+.bg-type-rock {
+  background-color: var(--color-rock);
+  color: white;
+}
+
+.bg-type-bug {
+  background-color: var(--color-bug);
+  color: white;
+}
+
+.bg-type-ghost {
+  background-color: var(--color-ghost);
+  color: white;
+}
+
+.bg-type-steel {
+  background-color: var(--color-steel);
+  color: black;
+}
+
+.bg-type-dragon {
+  background-color: var(--color-dragon);
+  color: white;
+}
+
+.bg-type-fairy {
+  background-color: var(--color-fairy);
+  color: black;
+}

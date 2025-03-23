@@ -1,0 +1,16 @@
+export interface PokemoneDetail {
+    id: number,
+    idPrevious: number,
+    idNext: number,
+    number:number,
+    name: string,
+    type: string,
+    types: [],
+    photo: string,
+    weight: number,
+    height: number,
+    stats: [],
+    ability: string,
+    previous: string,
+    next: string,
+}

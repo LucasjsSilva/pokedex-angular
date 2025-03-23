@@ -1,0 +1,24 @@
+
+<div [ngClass]="'bg-type-' + type.toLowerCase()"
+     class="p-4 rounded-[16px] m-[8px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)]"
+>
+  <div class="flex justify-end">
+    <p class="text-[10px] text-black opacity-[.3]">#{{formatarId(number)}}</p>
+  </div>
+  <div class="flex justify-start text-white">
+    <p class="capitalize">{{name}}</p>
+  </div>
+
+  <div class="flex justify-between items-center">
+    <div>
+      <div *ngFor="let type of types"
+            [ngClass]="'bg-type-' + type.type.name.toLowerCase()"
+            class="px-[8px] py-[4px] mt-[4px] rounded-[16px] text-center brightness-[1.1] text-[10px]"
+      >
+        {{type.type.name}}
+      </div>
+    </div>
+    <img src="{{photo}}" alt="{{name}}" class="w-[70px] h-[70px]">
+  </div>
+</div>
+

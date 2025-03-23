@@ -1,0 +1,17 @@
+<div *ngIf="loading">
+  <app-loading></app-loading>
+</div>
+
+<div *ngIf="!loading">
+  <div class="grid xl:grid-cols-4 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xs:grid-cols-1">
+    <div *ngFor="let pokemon of pokemonsDetail">
+        <app-card [name]="pokemon.name"
+                  [photo]="pokemon.sprites.other['official-artwork'].front_default"
+                  [number]="pokemon.id"
+                  [type]="pokemon.types[0].type.name"
+                  [types]="pokemon.types">
+
+        </app-card>
+    </div>
+  </div>
+</div>
