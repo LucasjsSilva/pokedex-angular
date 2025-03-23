@@ -9,6 +9,7 @@ import { CardComponent } from './pages/home/components/card/card.component';
 import { PokemonService } from './core/services/pokemons.service';
 import { HttpClientModule } from '@angular/common/http';
 import { SharedModule } from './shared/shared.module';
+import { DetalhesPokemonComponent } from './pages/detalhes-pokemon/detalhes-pokemon.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SharedModule } from './shared/shared.module';
     HomeComponent,
     CardGridComponent,
     CardComponent,
+    DetalhesPokemonComponent,
   ],
   imports: [
     HttpClientModule,

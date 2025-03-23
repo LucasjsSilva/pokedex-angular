@@ -29,17 +29,13 @@ export class CardGridComponent implements OnInit {
     this.pokemonService.pesquisar(pokemonFiltro).subscribe(pokemons => {
       this.pokemons = pokemons.results;
 
-      // Cria um array de observables
       const detailRequests = this.pokemons.map((pokemon: any, index) =>
         this.pokemonService.buscarPorCodigo(index + 1)
       );
 
-      // Executa todas as requisições e aguarda todas completarem
       forkJoin(detailRequests).subscribe(detailResults => {
         this.pokemonsDetail = detailResults;
-        console.log(this.pokemonsDetail);
 
-        // Adiciona um delay mínimo de 1 segundo antes de esconder o loading
         setTimeout(() => {
           this.loading = false;
         }, 1000);
